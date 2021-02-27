@@ -1,4 +1,4 @@
-package mx.com.maiktmp.database
+package mx.com.maiktmp
 
 import org.junit.Test
 

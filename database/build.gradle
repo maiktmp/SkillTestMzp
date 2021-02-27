@@ -6,7 +6,7 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 21
@@ -34,7 +34,6 @@ android {
 }
 
 dependencies {
-
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$vKtxCore"
@@ -49,6 +48,7 @@ dependencies {
     kapt "androidx.room:room-compiler:$vRoom"
     testImplementation "androidx.room:room-testing:$vRoom"
     api "androidx.room:room-ktx:$vRoom"
+    api "androidx.room:room-rxjava2:2.2.6"
 
 
     // Rx
