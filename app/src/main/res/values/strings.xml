@@ -13,6 +13,7 @@
     <string name="log_out_ad">¿Desea cerrar su sesión? </string>
     <string name="ok">Aceptar </string>
     <string name="cancel">Cancelar</string>
+    <string name="email_ins">Escribe cualquier correo</string>
 
 
     <string name="error_login">Ocurrió un error al acceder, intente más tarde.</string>
@@ -23,5 +24,4 @@
     <string name="wait">Espere</string>
     <string name="splash">SPLASH</string>
     <string name="screen">SCREEN</string>
-    <string name="email_ins">Escribe cualquier correo</string>
 </resources>
