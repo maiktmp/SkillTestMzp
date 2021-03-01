@@ -1,13 +1,11 @@
 package mx.com.maiktmp.skilltestmzp.ui.auth.view
 
-import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.adapters.AutoCompleteTextViewBindingAdapter
 import com.github.razir.progressbutton.hideProgress
 import com.github.razir.progressbutton.showProgress
 import mx.com.maiktmp.DBSkillTestMzp
@@ -16,6 +14,8 @@ import mx.com.maiktmp.skilltestmzp.R
 import mx.com.maiktmp.skilltestmzp.databinding.ActivityLoginBinding
 import mx.com.maiktmp.skilltestmzp.ui.auth.data.LoginRepository
 import mx.com.maiktmp.skilltestmzp.ui.auth.presenter.LoginPresenter
+import mx.com.maiktmp.skilltestmzp.ui.auth.view.intefaces.LoginView
+import mx.com.maiktmp.skilltestmzp.ui.employee.view.EmployeesActivity
 import mx.com.maiktmp.skilltestmzp.ui.models.GenericResponse
 import mx.com.maiktmp.skilltestmzp.ui.models.User
 import mx.com.maiktmp.skilltestmzp.utils.Extensions.displayToast
@@ -57,7 +57,8 @@ class LoginActivity : AppCompatActivity(), LoginView {
     }
 
     override fun handleLoginSuccess() {
-        displayToast("Welcome", Toast.LENGTH_SHORT)
+        startActivity(Intent(this, EmployeesActivity::class.java))
+        finish()
     }
 
     override fun handleLoginError(gr: GenericResponse<User?>) {

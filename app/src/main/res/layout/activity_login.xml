@@ -18,7 +18,7 @@
             android:id="@+id/v_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@color/primaryLightColor"
+            android:background="@color/primaryColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +55,7 @@
                     android:layout_margin="10dp"
                     android:hint="@string/email"
                     app:endIconMode="clear_text"
+                    app:helperText="@string/email_ins"
                     app:startIconDrawable="@drawable/ic_baseline_email_24">
 
                     <com.google.android.material.textfield.TextInputEditText

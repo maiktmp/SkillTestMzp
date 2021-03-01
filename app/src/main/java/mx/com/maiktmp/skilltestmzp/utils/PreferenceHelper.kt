@@ -24,7 +24,7 @@ object PreferenceHelper {
     }
 
 
-    enum class KEY(name: String) {
-        EMPLOYEES_CACHE("EMPLOYEES_CACHE")
+    enum class KEY {
+        EMPLOYEES_CACHE
     }
 }

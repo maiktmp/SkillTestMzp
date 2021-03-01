@@ -2,7 +2,7 @@ package mx.com.maiktmp.skilltestmzp.ui.auth.presenter
 
 import mx.com.maiktmp.skilltestmzp.base.BasePresenter
 import mx.com.maiktmp.skilltestmzp.ui.auth.data.LoginRepository
-import mx.com.maiktmp.skilltestmzp.ui.auth.view.LoginView
+import mx.com.maiktmp.skilltestmzp.ui.auth.view.intefaces.LoginView
 import mx.com.maiktmp.skilltestmzp.ui.models.User
 
 class LoginPresenter(private val repository: LoginRepository) : BasePresenter<LoginView>() {

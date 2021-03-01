@@ -23,6 +23,7 @@ abstract class BasePresenter<View> : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     fun onViewDestroyed() {
         view = null
+        disposable.dispose()
     }
 
     protected fun Disposable.autoClear() {

@@ -5,6 +5,7 @@ import mx.com.maiktmp.skilltestmzp.R
 import mx.com.maiktmp.skilltestmzp.base.BasePresenter
 import mx.com.maiktmp.skilltestmzp.ui.employee.data.EmployeeCacheRepository
 import mx.com.maiktmp.skilltestmzp.ui.employee.data.EmployeeRepository
+import mx.com.maiktmp.skilltestmzp.ui.employee.data.UserRepository
 import mx.com.maiktmp.skilltestmzp.ui.employee.view.interfaces.EmployeesView
 import mx.com.maiktmp.skilltestmzp.ui.models.Employee
 import mx.com.maiktmp.skilltestmzp.ui.models.GenericResponse
@@ -14,8 +15,7 @@ class EmployeePresenter(
     private val context: Context?,
     private val apiRepository: EmployeeRepository,
     private val cacheRepository: EmployeeCacheRepository,
-) :
-    BasePresenter<EmployeesView>() {
+) :BasePresenter<EmployeesView>() {
 
     fun getEmployees() {
         view()?.showProgress()
@@ -51,5 +51,4 @@ class EmployeePresenter(
         }
         view()?.hideProgress()
     }
-
 }
