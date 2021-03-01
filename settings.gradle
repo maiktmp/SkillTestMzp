@@ -1,3 +1,4 @@
+include ':web'
 include ':database'
 include ':app'
 rootProject.name = "SkillTestMzp"

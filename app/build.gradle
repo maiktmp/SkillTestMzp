@@ -39,6 +39,8 @@ android {
 dependencies {
     //Database
     implementation project(":database")
+    //Web
+    implementation project(":web")
 
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -59,6 +61,13 @@ dependencies {
 
     //Progress Button
     implementation "com.github.razir.progressbutton:progressbutton:$vProgressButton"
+
+    // CircularImageView
+    implementation "de.hdodenhof:circleimageview:$vCircularImage"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$vGlide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$vGlide"
 
 
 }

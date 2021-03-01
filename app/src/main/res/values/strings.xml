@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">SkillTestMzp</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="log_in">Entrar</string>
+    <string name="validation_require">El campo es requerido</string>
+    <string name="validation_email">Ingrese un correo válido</string>
+    <string name="loading">Espere...</string>
+    <string name="employees_empty">No existen empleados</string>
+
+
+    <string name="error_login">Ocurrió un error al acceder, intente más tarde.</string>
+    <string name="error_employees">Ocurrió un error al obtener los empleados, intente más tarde.</string>
+    <string name="error_employees_empty">Ocurrió un error al obtener los empleados, verifique su conexión.</string>
+    <string name="error_network">Por favor verifique su conexión</string>
 </resources>

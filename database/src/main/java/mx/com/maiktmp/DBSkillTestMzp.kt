@@ -9,7 +9,7 @@ import mx.com.maiktmp.entities.UserDB
     entities = [
         UserDB::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class DBSkillTestMzp : RoomDatabase() {

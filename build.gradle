@@ -54,5 +54,15 @@ ext {
     vGson = "2.3.1"
 
     //ProgressButton
-    vProgressButton="2.1.0"
+    vProgressButton = "2.1.0"
+
+    //Retrofit
+    vLogInterceptor = '3.12.1'
+    vRetrofit = '2.6.0'
+
+    //CircularImage
+    vCircularImage = '3.1.0'
+
+    //Glide
+    vGlide = '4.12.0'
 }

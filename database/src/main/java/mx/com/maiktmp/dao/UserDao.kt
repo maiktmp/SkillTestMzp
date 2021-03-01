@@ -14,6 +14,6 @@ interface UserDao {
     fun findActive(): Single<List<UserDB>>
 
     @Delete
-    fun deleteCategory(category: UserDB): Completable
+    fun deleteUser(category: UserDB): Completable
 
 }
